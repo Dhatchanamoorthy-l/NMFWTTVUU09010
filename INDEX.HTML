@@ -2,81 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Interactive Portfolio Project using HTML, CSS and JavaScript</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Timetable</title>
+  <link rel="stylesheet" href="timetable.css">
 </head>
 <body>
-  <div class="app">
-    <header>
-      <h1>Interactive Portfolio Project using HTML, CSS and JavaScript</h1>
-    </header>
-
-    <main class="deck" id="deck">
-      <!-- Slide 1 -->
-      <section class="slide active">
-        <h2>Introduction</h2>
-        <p><b>Name:</b>Dhatchanamoorthy.l</p>
-        <p><b>Location:</b> Mahendravadi Arakkonam, Ranipet District</p>
-        <p><b>Mobile:</b> 9080570068</p>
-        <p><b>Email:</b>lakshmanan3084700@gmail.com</p>
-      </section>
-      <!-- Slide 2 -->
-      <section class="slide">
-        <h2>Career Objective</h2>
-        <p>To pursue IT & Government jobs and build a successful career while inspiring others.</p>
-      </section>
-      <!-- Slide 3 -->
-      <section class="slide">
-        <h2>Dream Project / Future Profile</h2>
-        <p><b>Founder – Orphanage Service</b></p>
-        <p>Changing Lives – Helping children find their dreams</p>
-      </section>
-      <!-- Slide 4 -->
-      <section class="slide">
-        <h2>Tools & Technologies</h2>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>GitHub</li>
-          <li>VS Code</li>
-        </ul>
-      </section>
-      <!-- Slide 5 -->
-      <section class="slide">
-        <h2>Portfolio Design & Layout</h2>
-        <p>Interactive slide-based design using HTML, CSS, and JavaScript.</p>
-      </section>
-      <!-- Slide 6 -->
-      <section class="slide">
-        <h2>Projects & Achievements</h2>
-        <p>Project Completed – Overview: English Communications</p>
-      </section>
-      <!-- Slide 7 -->
-      <section class="slide">
-        <h2>Languages Known</h2>
-        <ul>
-          <li>Tamil – Fluent</li>
-          <li>English – Basic</li>
-        </ul>
-      </section>
-      <!-- Slide 8 -->
-      <section class="slide">
-        <h2>Learning & Inspiration</h2>
-        <ul>
-          <li>Completed Mudhalvan Course – Improved English Communication & Leadership Skills</li>
-          <li>Inspired by Dr. A.P.J. Abdul Kalam – "Missile Man of India"</li>
-        </ul>
-      </section>
-    </main>
-
-    <footer>
-      <button class="btn" id="prevBtn">? Prev</button>
-      <span id="step">Slide 1 of 8</span>
-      <button class="btn" id="nextBtn">Next ?</button>
-      <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
-    </footer>
+  <div class="container">
+    <h1>Weekly Timetable</h1>
+    <table id="timetable">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>9:00 - 10:00</td>
+          <td class="subject">Math</td>
+          <td class="subject">English</td>
+          <td class="subject">Science</td>
+          <td class="subject">Computer</td>
+          <td class="subject">Tamil</td>
+          <td class="subject">Sports</td>
+        </tr>
+        <tr>
+          <td>10:00 - 11:00</td>
+          <td class="subject">English</td>
+          <td class="subject">Science</td>
+          <td class="subject">Math</td>
+          <td class="subject">History</td>
+          <td class="subject">Computer</td>
+          <td class="subject">Club</td>
+        </tr>
+        <tr>
+          <td>11:00 - 11:15</td>
+          <td colspan="6" class="break">Short Break</td>
+        </tr>
+        <tr>
+          <td>11:15 - 12:15</td>
+          <td class="subject">Science</td>
+          <td class="subject">Math</td>
+          <td class="subject">English</td>
+          <td class="subject">Computer</td>
+          <td class="subject">Sports</td>
+          <td class="subject">Library</td>
+        </tr>
+        <tr>
+          <td>12:15 - 1:00</td>
+          <td colspan="6" class="break">Lunch Break</td>
+        </tr>
+        <tr>
+          <td>1:00 - 2:00</td>
+          <td class="subject">History</td>
+          <td class="subject">Computer</td>
+          <td class="subject">Math</td>
+          <td class="subject">English</td>
+          <td class="subject">Science</td>
+          <td class="subject">Club</td>
+        </tr>
+        <tr>
+          <td>2:00 - 3:00</td>
+          <td class="subject">Computer</td>
+          <td class="subject">Tamil</td>
+          <td class="subject">Science</td>
+          <td class="subject">Sports</td>
+          <td class="subject">Math</td>
+          <td class="subject">Library</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-
-  <script src="script.js"></script>
+  <script src="timetable.js"></script>
 </body>
 </html>
